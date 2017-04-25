@@ -18,6 +18,6 @@ SELECT * FROM syntax_practice ORDER BY account_balance LIMIT 3;
 -- 7. Get all users with account balances that are more than $100.
 SELECT * FROM syntax_practice where account_balance<'100.00';
 -- 8. Add a new record.
-INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance, user_id) VALUES ( 'elonmusk' , 'LA', 55, 75, 1988877899, 9 );
+INSERT INTO syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) VALUES ( 'elonmusk' , 'LA', 55, 75, 1988877899);
 -- 9. The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
 DELETE FROM syntax_practice WHERE transactions_completed >5 AND city ='miami'OR city='phoenix';
